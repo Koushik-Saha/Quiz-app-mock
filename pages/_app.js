@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import {AuthProvider} from "../context/auth-context";
 
 const QuizApp = ({Component, pageProps}) => {

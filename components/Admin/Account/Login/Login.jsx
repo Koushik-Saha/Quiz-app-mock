@@ -12,7 +12,7 @@ const Login = (Props) => {
     return (
         <div className="login-wrap mvn-acc-form">
             <div className="mvn-acc-form__title">
-                Log in to Strativ Quiz
+                Log in to Admin Strativ Quiz
             </div>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-label-group my-5">

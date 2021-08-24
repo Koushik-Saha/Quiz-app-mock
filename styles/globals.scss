@@ -417,4 +417,66 @@ a {
   width: 100% !important;
 }
 
+.faqItems {
+  .item {
+    margin-top: 10px;
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      background-color: $white!important;
+      color: $text-dark!important;
+      border: none!important;
+      border-radius: 0!important;
+      padding: 0!important;
+      font-size: 1rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      text-align: left!important;
+      line-height: 1.5em;
+
+      &:focus,
+      &:hover {
+        background-color: transparent !important;
+        color: $brand-color !important;
+      }
+
+      span {
+        margin-left: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 20px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $text-body;
+        border-radius: 50%;
+        font-size: 10px;
+        color: $text-body;
+      }
+
+      &.active , &.show{
+        span {
+          border-color: $brand-color;
+          color: $brand-color;
+        }
+      }
+    }
+
+    .answer {
+      margin-top: 8px;
+    }
+  }
+}
+
+.questionMore {
+  color: $text-dark;
+  a {
+    color: $brand-color;
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
 

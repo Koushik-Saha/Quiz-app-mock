@@ -6,7 +6,7 @@ import Login from "../../components/Admin/Account/Login";
 const LoginModule = () => {
     return (
         <div className="account-wrap py-4 py-sm-5">
-            <PageHead title={`Login | MoveOn`} />
+            <PageHead title={`Admin | Login`} />
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-md-5 col-lg-7 col-xl-8 py-3 d-none d-md-block">

@@ -1,12 +1,33 @@
 import React from 'react'
 import {useForm} from "react-hook-form";
+import {useRouter} from "next/router";
 
 const Login = (Props) => {
+
+    const router = useRouter()
 
     const {register, handleSubmit} = useForm()
 
     const onSubmit = (data) => {
 
+        let userData = {
+            email: data?.email,
+            password: data?.password
+        }
+
+        let retrievedObject = localStorage.getItem('user_info')
+        let parseObject = JSON.parse(retrievedObject)
+
+        if (parseObject){
+            if (parseObject?.email !== data?.email && parseObject?.password !== data?.password){
+                alert("Login info is wrong! Please use correct email and password")
+            }else {
+                router.push('/question')
+            }
+        }else {
+            localStorage.setItem('user_info', JSON.stringify(userData));
+            router.push('/question')
+        }
     }
 
     return (

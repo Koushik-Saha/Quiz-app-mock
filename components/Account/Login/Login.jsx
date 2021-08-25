@@ -22,11 +22,11 @@ const Login = (Props) => {
             if (parseObject?.email !== data?.email && parseObject?.password !== data?.password){
                 alert("Login info is wrong! Please use correct email and password")
             }else {
-                router.push('/question')
+                router.push('/answers')
             }
         }else {
             localStorage.setItem('user_info', JSON.stringify(userData));
-            router.push('/question')
+            router.push('/answers')
         }
     }
 
